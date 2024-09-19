@@ -207,7 +207,7 @@ function AddToCart({ onHandleCloseQuantity }) {
   function handleIncrement() {
     setQuantity(prevQuantity => prevQuantity + 1);
   }
-
+  onHandleCloseQuantity();
   return (
     <div className="bg-red-600 rounded-full flex gap-6  px-4 py-2 ">
       <img
