@@ -147,10 +147,10 @@ function Food({ foodObj, items, setItems }) {
   }
 
   function handleCloseQuantity() {
-    console.log('dkfkf');
     setIsOpen(false);
-    console.log(isOpen);
+    console.log(123);
   }
+
   return (
     <>
       <li className="list-none relative">
@@ -195,7 +195,7 @@ function FoodInfo({ foodObj }) {
   );
 }
 function AddToCart({ onHandleCloseQuantity }) {
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(0);
   function handleDecrement() {
     if (quantity > 1) {
       setQuantity(prevQuantity => prevQuantity - 1);
